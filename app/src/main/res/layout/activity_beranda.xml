@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:layout_marginLeft="30dp"
+    android:layout_marginRight="30dp"
+    android:orientation="vertical"
+    tools:context=".BerandaActivity">
+
+    <TextView
+        android:id="@+id/txTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Rangkuman Bulan Ini"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/txTitleOut"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Pengeluaran"
+        android:textAlignment="center"
+        android:textColor="#FF0000"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/txTitleIn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Pemasukkan"
+        android:textAlignment="center"
+        android:textColor="#00A81C"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <GridLayout
+        android:id="@+id/GridLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:columnCount="2"
+        android:orientation="horizontal"
+        android:rowCount="2"
+        tools:context=".GridXMLActivity"
+        tools:layout_editor_absoluteY="0dp">
+
+        <FrameLayout
+            android:id="@+id/btnCashIn"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="30">
+
+            <ImageView
+                android:id="@+id/imgCashIn"
+                android:layout_width="145dp"
+                android:layout_height="150dp"
+                android:src="@drawable/wavy_tech_31_single_01_min" />
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="145dp"
+                android:layout_height="150dp"
+                android:gravity="bottom|center_horizontal"
+                android:paddingTop="30dp"
+                android:text="Tambah Pemasukkan"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/btnCashOut"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="30">
+
+            <ImageView
+                android:id="@+id/imgCashOut"
+                android:layout_width="145dp"
+                android:layout_height="150dp"
+                android:src="@drawable/wavy_bus_26_single_01_min" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="145dp"
+                android:layout_height="150dp"
+                android:gravity="bottom|center_horizontal"
+                android:paddingTop="30dp"
+                android:text="Tambah Pengeluaran"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/btnDetail"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="30dp"
+            android:layout_weight="30">
+
+            <ImageView
+                android:id="@+id/imgDetail"
+                android:layout_width="145dp"
+                android:layout_height="150dp"
+                android:src="@drawable/wavy_tech_31_single_12_min" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="145dp"
+                android:layout_height="150dp"
+                android:gravity="bottom|center_horizontal"
+                android:paddingTop="30dp"
+                android:text="Detail Cash"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/btnSettings"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="30dp"
+            android:layout_weight="30">
+
+            <ImageView
+                android:id="@+id/imgSettings"
+                android:layout_width="145dp"
+                android:layout_height="150dp"
+                android:src="@drawable/wavy_bus_12_single_09_min" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="145dp"
+                android:layout_height="150dp"
+                android:gravity="bottom|center_horizontal"
+                android:paddingTop="30dp"
+                android:text="Pengaturan"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+        </FrameLayout>
+    </GridLayout>
+
+</LinearLayout>

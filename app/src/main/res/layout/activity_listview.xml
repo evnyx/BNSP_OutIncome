@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical">
+
+    <GridLayout
+        android:id="@+id/GridLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="2"
+        android:orientation="horizontal"
+        android:rowCount="1"
+        tools:context=".GridXMLActivity"
+        tools:layout_editor_absoluteY="0dp">
+
+        <FrameLayout
+            android:layout_width="170dp"
+            android:layout_height="70dp"
+            android:layout_gravity="start"
+            android:layout_marginLeft="20dp"
+            android:layout_weight="30">
+
+            <TextView
+                android:id="@+id/txDetailCash"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start|top"
+                android:text="Hallo"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txDetailDesc"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Hallo"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txDetailDate"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:text="Hallo"
+                android:textColor="@android:color/darker_gray"
+                android:textStyle="italic" />
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="160dp"
+            android:layout_height="70dp"
+            android:layout_gravity="end"
+            android:layout_marginRight="30dp"
+            android:layout_weight="30">
+
+            <ImageView
+                android:id="@+id/Arrow"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_gravity="end"
+                android:src="@drawable/wavy_tech_31_single_01_min" />
+        </FrameLayout>
+    </GridLayout>
+
+</LinearLayout>

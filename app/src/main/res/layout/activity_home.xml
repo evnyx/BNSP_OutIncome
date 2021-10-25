@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#BCFFFF"
+    tools:context=".HomeActivity">
+
+    <TextView
+        android:id="@+id/textRangkuman"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Rangkuman Bulan Ini"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textPemasukan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Pemasukan Rp"
+        android:textColor="#1D9C00"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textRangkuman" />
+
+    <TextView
+        android:id="@+id/textPengeluaran"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Pengeluaran Rp"
+        android:textColor="#FF0000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textPemasukan" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="390dp"
+        android:layout_height="189dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.476"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textPengeluaran"
+        app:srcCompat="@drawable/graph" />
+
+    <ImageView
+        android:id="@+id/imgIncome"
+        android:layout_width="183dp"
+        android:layout_height="96dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:srcCompat="@drawable/income" />
+
+    <ImageView
+        android:id="@+id/imgOutcome"
+        android:layout_width="171dp"
+        android:layout_height="96dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.609"
+        app:layout_constraintStart_toEndOf="@+id/imgIncome"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:srcCompat="@drawable/outcome" />
+
+    <TextView
+        android:id="@+id/txtAddIncome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="8dp"
+        android:text="Tambah Pemasukan"
+        android:textColor="#000000"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgIncome" />
+
+    <TextView
+        android:id="@+id/txtAddOutCome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="40dp"
+        android:text="Tambah Pengeluaran"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgOutcome" />
+
+    <ImageView
+        android:id="@+id/imgDetail"
+        android:layout_width="180dp"
+        android:layout_height="94dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtAddIncome"
+        app:srcCompat="@drawable/detail" />
+
+    <TextView
+        android:id="@+id/txtDetaiCashFlow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="8dp"
+        android:text="Detail Cash Flow"
+        android:textColor="#000000"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgDetail" />
+
+    <ImageView
+        android:id="@+id/imgPengaturan"
+        android:layout_width="170dp"
+        android:layout_height="90dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="36dp"
+        app:layout_constraintStart_toEndOf="@+id/imgDetail"
+        app:layout_constraintTop_toBottomOf="@+id/txtAddOutCome"
+        app:srcCompat="@drawable/settings" />
+
+    <TextView
+        android:id="@+id/txtSettings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Pengaturan"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.641"
+        app:layout_constraintStart_toEndOf="@+id/txtDetaiCashFlow"
+        app:layout_constraintTop_toBottomOf="@+id/imgPengaturan" />
+</androidx.constraintlayout.widget.ConstraintLayout>
