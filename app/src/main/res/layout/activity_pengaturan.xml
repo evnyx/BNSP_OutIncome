@@ -86,7 +86,7 @@
         android:id="@+id/btnKembali"
         android:layout_width="372dp"
         android:layout_height="50dp"
-        android:text="<<Kembali"
+        android:text="Kembali"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnSavePass" />
@@ -100,7 +100,8 @@
         android:textColor="#000000"
         android:textSize="12sp"
         app:layout_constraintTop_toBottomOf="@+id/txtAbout"
-        tools:layout_editor_absoluteX="128dp" />
+        tools:layout_editor_absoluteX="128dp"
+        tools:ignore="MissingConstraints" />
 
     <ImageView
         android:id="@+id/imageView3"
@@ -110,7 +111,7 @@
         android:layout_marginTop="136dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnKembali"
-        app:srcCompat="@drawable/devany" />
+        app:srcCompat="@drawable/logo" />
 
     <TextView
         android:id="@+id/txtAbout"

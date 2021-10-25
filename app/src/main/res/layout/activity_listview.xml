@@ -64,7 +64,7 @@
                 android:layout_width="70dp"
                 android:layout_height="70dp"
                 android:layout_gravity="end"
-                android:src="@drawable/wavy_tech_31_single_01_min" />
+                android:src="@drawable/viewdetails" />
         </FrameLayout>
     </GridLayout>
 

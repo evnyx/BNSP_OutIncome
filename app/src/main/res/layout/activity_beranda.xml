@@ -60,9 +60,10 @@
 
             <ImageView
                 android:id="@+id/imgCashIn"
-                android:layout_width="145dp"
-                android:layout_height="150dp"
-                android:src="@drawable/wavy_tech_31_single_01_min" />
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/add"
+                android:layout_gravity="center"/>
 
             <TextView
                 android:id="@+id/textView1"
@@ -83,9 +84,10 @@
 
             <ImageView
                 android:id="@+id/imgCashOut"
-                android:layout_width="145dp"
-                android:layout_height="150dp"
-                android:src="@drawable/wavy_bus_26_single_01_min" />
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/remove"
+                android:layout_gravity="center"/>
 
             <TextView
                 android:id="@+id/textView2"
@@ -107,9 +109,10 @@
 
             <ImageView
                 android:id="@+id/imgDetail"
-                android:layout_width="145dp"
-                android:layout_height="150dp"
-                android:src="@drawable/wavy_tech_31_single_12_min" />
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/viewdetails"
+                android:layout_gravity="center"/>
 
             <TextView
                 android:id="@+id/textView3"
@@ -131,9 +134,10 @@
 
             <ImageView
                 android:id="@+id/imgSettings"
-                android:layout_width="145dp"
-                android:layout_height="150dp"
-                android:src="@drawable/wavy_bus_12_single_09_min" />
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/settings"
+                android:layout_gravity="center"/>
 
             <TextView
                 android:id="@+id/textView4"
